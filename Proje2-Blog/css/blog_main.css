@@ -1,0 +1,117 @@
+/*
+Project name: One Pages Blog Pages
+Project Author:Serap Pala
+*/
+
+/* Config File */
+*{
+    box-sizing: border-box!important;
+    padding: 0;
+    margin: 0;
+}
+html{
+  font-size:14px;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #181818;
+  position: relative;
+}
+
+.f20{
+  font-size:.5rem;
+}
+
+
+
+/* Nav Menu */
+nav{
+   
+    height: 7rem;
+   
+}
+
+nav .navbar-brand img{
+   
+ width:100%;
+ height: 100%;
+ max-width:320px;
+ max-height: 80px;
+ object-fit: contain;
+ 
+}
+nav .nav-item a{
+  font-size:1.8rem!important;
+  color: #181818 !important;
+}
+.navbar-light .navbar-nav .nav-link.active{
+  
+  color:#8758FF !important;
+}
+/* Header */
+header .jumbotron{
+  background-image: url(/images/page-header-bg.jpg);
+  background-size: cover;
+  background-position: 25% 50%;
+  padding-top:12rem ;
+  height: 60rem;
+  opacity: 0.8;
+  z-index: -1;
+}
+.readmorebtn{
+  font-size:2rem;
+  background-color: #8758FF;
+  color: #fff;
+}
+.readmorebtn:hover{
+  background-color: #fff;
+  color: #8758FF;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+}
+/* Breadcrumb */
+nav ol.breadcrumb{
+  margin-top:-1.6%;
+  background-color: #8758FF!important;
+
+}
+nav ol.breadcrumb li a{
+  color:#F2F2F2!important;
+}
+nav ol.breadcrumb li a:active{
+
+  color:#5CB8E4!important;
+}
+/* Blog card */
+.blogcard img:hover{
+  opacity: .9;
+}
+.card .card-header h5{
+ background-color: #8758FF;
+ color:aliceblue;
+}
+/* Footer */
+footer{
+  min-height: 50%;
+  width:auto;
+}
+footer .links{
+border:1px solid #5CB8E4;
+}
+footer .links ul li{
+  padding:.5rem;
+  }
+  footer .links ul li a,footer{
+  font-size:1.6rem;
+  color:#F2F2F2;
+  text-decoration: none;
+    }
+    footer .links ul li a:hover{
+  
+      color:#5CB8E4;
+        }
+    
+ 

@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>One Pages Blog Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="title" content="one pages blog pages">
+    <meta name="author" content="Serap Pala">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="identifier-URL" content="">
+    <!-- Favicon  -->
+    <link rel="icon" href="./images/blogfav.png">
+
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- jquery ui css-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/blog_main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- jquery ui js-->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+
+
+    <!-- Custom Js -->
+    <script src="js/blog_main.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="45">
+
+    <!-- Menu Start-->
+    <nav class="navbar fixed-top navbar-expand-sm bg-light navbar-light">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <img src="./images/bloglogo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" data-target="#menu" data-toggle="collapse">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="ml-auto navbar-nav">
+
+                    <li class="nav-item">
+                        <a href="#html5" class="nav-link">HTML5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#css3" class="nav-link">Css3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#js" class="nav-link">Js</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#jquery" class="nav-link">Jquery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <button id="btn_login" class="ml-3 mt-2 border-0"><i class="fas fa-user-lock fa-2x"></i>
+                        </button>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Menu End-->
+
+    <!-- Login Modal Start-->
+<!--     <div class="modal fade" id="myMember" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Close</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h3>MEMBER LOGIN</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" id="user_email" name="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="user_password" name="password" class="form-control" placeholder="Password" required>
+                            </div>
+                            <button class="btn btn-danger mr-1" type="reset">Reset</button>
+                        <button class="btn btn-success " type="submit">Login</button>
+                       
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!--  Login Modal End-->
+
+
+
+
+
+
+    <!-- Login Modal Start-->
+    <div class="modal fade" id="myMember" role="dialog">
+        <div class="modal-dialog ">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-white"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container ">
+                        <h3 class="text-white">MEMBER LOGIN</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" id="user_email" name="email" class="form-control" placeholder="Email Address" >
+                                <small id="validation_email" class="form-text text-danger" required></small>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="user_phone" name="phone" class="form-control" placeholder="Phone" >
+                                <small id="validation_phone" class="form-text text-danger" required></small>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="user_password" name="password" class="form-control" placeholder="Password" >
+                                <small id="validation_password" class="form-text text-danger" required></small>
+                            </div>
+                            <button class="btn btn-danger mr-1" type="reset">Reset</button>
+                        <button class="btn btn-success"  id="btnSubmit" type="submit">Login</button>
+                       
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Login Modal End-->
+
+    <!-- Header Start-->
+    <header>
+        <div class="jumbotron text-white bg-dark">
+            <div class="container h-100 d-flex justify-content-center align-items-center">
+                <div>
+                    <h1 class="h2 display-1 text-white text-uppercase font-weight-bold">
+                        one page - blog website
+                    </h1>
+                    <p class="text-capitalize display-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Facilis, itaque!
+                    </p>
+                    <a href="" class="btn readmorebtn">Read More..</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- Header End-->
+
+    <!-- Main Start-->
+    <main class="container-fluid">
+
+        <div class="row">
+            <div class="col-xl-8 col-md-12">
+                <div class="card blogcard mb-4 ">
+                    <div class="card-header" id="html5">
+                        <h2 class="display-2">HTML 5</h2>
+                    </div>
+                    <img src="./images/blog.jpg" alt="html5" class="card-img-top" title="html5 image">
+                    <div class="card-body">
+                        <h5 class="card-title display-5">title</h5>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quisquam magni eos
+                            deserunt, rerum dolores commodi sint facilis? Magnam illum beatae quis repellat labore,
+                            voluptas non, velit necessitatibus quaerat iusto sunt minus harum eius soluta. Hic minima
+                            aliquam soluta magnam voluptatibus unde sint? Perferendis, minus? Mollitia earum nisi optio
+                            ut possimus nam fugiat fugit maiores culpa reiciendis, dolore eos, enim atque animi!
+                            Necessitatibus debitis, rem unde nulla nam dolore iure aliquid tenetur corporis incidunt
+                            perspiciatis ad delectus consequatur quos laborum voluptate?</p>
+                        <button class="btn btn-danger text-capitalize float-right">detail</button>
+                    </div>
+                    <div style="opacity: 0.6;" class="card-footer">
+                        date 12.09.2022
+                    </div>
+                </div>
+                <div class="card blogcard mb-4">
+                    <div class="card-header" id="css3">
+                        <h2 class="display-2 ">CSS 3 </h2>
+                    </div>
+                    <img src="./images/blog2.jpg" alt="css3" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title display-5">title</h5>
+                        <p class="card-tex text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quisquam magni eos
+                            deserunt, rerum dolores commodi sint facilis? Magnam illum beatae quis repellat labore,
+                            voluptas non, velit necessitatibus quaerat iusto sunt minus harum eius soluta. Hic minima
+                            aliquam soluta magnam voluptatibus unde sint? Perferendis, minus? Mollitia earum nisi optio
+                            ut possimus nam fugiat fugit maiores culpa reiciendis, dolore eos, enim atque animi!
+                            Necessitatibus debitis, rem unde nulla nam dolore iure aliquid tenetur corporis incidunt
+                            perspiciatis ad delectus consequatur quos laborum voluptate?</p>
+                        <button class="btn btn-danger text-capitalize float-right">detail</button>
+                    </div>
+                    <div style="opacity: 0.6;" class="card-footer">
+                        date 12.09.2022
+                    </div>
+                </div>
+                <div class="card blogcard mb-4">
+                    <div class="card-header" id="js">
+                        <h2 class="display-2 ">JS </h2>
+                    </div>
+                    <img src="./images/blog3.jpg" alt="js" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title display-5">title</h5>
+                        <p class="card-tex text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quisquam magni eos
+                            deserunt, rerum dolores commodi sint facilis? Magnam illum beatae quis repellat labore,
+                            voluptas non, velit necessitatibus quaerat iusto sunt minus harum eius soluta. Hic minima
+                            aliquam soluta magnam voluptatibus unde sint? Perferendis, minus? Mollitia earum nisi optio
+                            ut possimus nam fugiat fugit maiores culpa reiciendis, dolore eos, enim atque animi!
+                            Necessitatibus debitis, rem unde nulla nam dolore iure aliquid tenetur corporis incidunt
+                            perspiciatis ad delectus consequatur quos laborum voluptate?</p>
+                        <button class="btn btn-danger text-capitalize float-right">detail</button>
+                    </div>
+                    <div style="opacity: 0.6;" class="card-footer">
+                        date 12.09.2022
+                    </div>
+                </div>
+                <div class="card blogcard mb-4">
+                    <div class="card-header" id="jquery">
+                        <h2 class="display-2">Jquery </h2>
+                    </div>
+                    <img src="./images/blog4.jpg" alt="Jquery" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title display-5">title</h5>
+                        <p class="card-tex text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quisquam magni eos
+                            deserunt, rerum dolores commodi sint facilis? Magnam illum beatae quis repellat labore,
+                            voluptas non, velit necessitatibus quaerat iusto sunt minus harum eius soluta. Hic minima
+                            aliquam soluta magnam voluptatibus unde sint? Perferendis, minus? Mollitia earum nisi optio
+                            ut possimus nam fugiat fugit maiores culpa reiciendis, dolore eos, enim atque animi!
+                            Necessitatibus debitis, rem unde nulla nam dolore iure aliquid tenetur corporis incidunt
+                            perspiciatis ad delectus consequatur quos laborum voluptate?</p>
+                        <button class="btn btn-danger text-capitalize float-right">detail</button>
+                    </div>
+                    <div style="opacity: 0.6;" class="card-footer">
+                        date 12.09.2022
+                    </div>
+                </div>
+
+
+
+                <div class="card blogcard mb-4 ">
+                    <div class="card-header" id="html5">
+                        <h2 class="display-2">HTML 5</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-dark table-striped">
+                                <caption>Title</caption>
+                                <thead>
+                                    <tr>
+                                        <th>title 1</th>
+                                        <th>title 2</th>
+                                        <th>title 3</th>
+                                        <th>title 4</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>td1 </td>
+                                        <td>td2 </td>
+                                        <td>td13 </td>
+                                        <td>td4 </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4" class="text-center">One Page Blog Website</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+
+                        </div>
+                    </div>
+                    <div style="opacity: 0.6;" class="card-footer">
+                        date 12.09.2022
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-12">
+                <div class="card mb-5">
+                    <div class="card-header">
+                        <h5 class="display-5 text-center p-3">Search</h5>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input id="tags" type="text" class="form-control" placeholder="Search here">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-5">
+                    <div class="card-header">
+                        <h5 class="display-5 text-center p-3 ">Latest Posts</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="">Html5</a></li>
+                                    <li><a href="">Css</a></li>
+                                    <li><a href="">Javascript</a></li>
+                                    <li><a href="">JQuery</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="">Spring boot</a></li>
+                                    <li><a href="">Servlet</a></li>
+                                    <li><a href="">JSF</a></li>
+                                    <li><a href="">JQuery</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header ">
+                        <h5 class="display-5 text-center p-2">Tag Cloud</h5>
+                        <div class="card-body">
+                            <a class="btn btn-primary border" href="">tag-1</a>
+                            <a class="btn btn-primary border" href="">tag-2</a>
+                            <a class="btn btn-primary border" href="">tag-3</a>
+                            <a class="btn btn-primary border" href="">tag-4</a>
+                            <a class="btn btn-primary border" href="">tag-5</a>
+                            <a class="btn btn-primary border" href="">tag-6</a>
+                            <a class="btn btn-primary border" href="">tag-7</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Breadcrumb Start-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumb End-->
+
+    </main>
+    <!-- Main End-->
+
+    <!-- Footer Start-->
+    <footer class="text-white bg-dark p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5 links">
+                    <ul class="list-unstyled">
+                        <li><a href="#html5">HTML5</a></li>
+                        <li><a href="#css3">CSS3</a></li>
+                        <li><a href="#js">JS</a></li>
+                        <li><a href="#jquery">Jquery</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="col-md-6 mt-5 copyright">
+                    <p>&copy;All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
