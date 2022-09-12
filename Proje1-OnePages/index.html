@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="one pages">
+    <meta name="keywords" content="html, css3, jquery">
+    <meta name="author" content="Serap Pala">
+    <meta name="identifier-URL" content="https://www.site.com.tr">
+
+    <title>One Page</title>
+    <!-- Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!--Font Awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="css/one_pages_main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <!-- Bootstrap JS -->
+    <!--   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script> -->
+    <!--Custom js-->
+    <script src="js/one_pages_main.js"></script>
+
+    <style>
+        .ui-dialog {
+            width: 50%;
+            height: 300px;
+        }
+
+        #dialog {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top"></div>
+
+    <nav>
+        <div class="container">
+            <div id="logo"><a href="" class="onepage-logo">
+                    <img class="logo-image" src="./images/onegapelogo.png" alt="">
+                </a></div>
+
+            <div id="menu" class="d-none d-xl-block d-xl-none">
+                <ul class="text-uppercase">
+                    <li class="menu-item">
+                        <a href="#"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#about"><i class="fas fa-user"></i> About</a>
+                    </li>
+                    <li class="menu-item"><a href="#division-3-career"><i class="fas fa-user-check"></i>Career</a></li>
+
+                    <li class="menu-item"><a href="#sss"><i class="fas fa-newspaper"></i>SSSS</a></li>
+                    <li class="menu-item"><a href="#form-email"><i class="far fa-id-card"></i>Contact</a></li>
+
+
+                    <li class="menu-item ml-4">
+                     <button id="dialogButton" style="border:none!important;"><i class="fas fa-user"></i></button>
+                    </li>
+
+
+
+                    <li class="menu-item ml-4">
+                        <input id="tags" type="text"><!-- <i class="fas fa-search" style="font-size:2rem"></i> -->
+                    </li>
+
+
+                </ul>
+            </div>
+
+
+
+            <div id="bar-icon" class="d-lg-none">
+
+                <i class="fas fa-bars" class=""></i>
+            </div>
+
+
+
+        </div>
+    </nav>
+
+
+    <!--Header Start-->
+    <header>
+        <div class="image-header">
+        </div>
+        <div class="theme-header mt-1 mb-1">
+            <h1 class="mt-1 mb-1"> One Page Website</h1>
+            <div class="col-xl-12 text-center">
+                <p class="mt-2 mb-1"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus aliquam
+                    nesciunt
+                    ab repellendus necessitatibus hic quod iure atque aliquid optio magnam eaque nostrum odit,
+                    repudiandae
+                    ipsa, possimus ipsum, quasi quo.</p>
+            </div>
+
+            <a href="#about" class="btn btn-header ">Read More</a>
+        </div>
+    </header>
+    <!--Header End-->
+
+
+    <main>
+
+        <!--section 1 start-->
+        <section id="division-1-main">
+            <div class="piece">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia asperiores quas ratione distinctio!
+                    Numquam reprehenderit sed vitae tenetur, nam aspernatur voluptates mollitia molestias saepe dolores
+                    quia. Voluptatibus beatae consequatur modi?</p>
+            </div>
+        </section>
+        <!--section 1 end-->
+
+
+        <h2 id="about"></h2>
+        <div class="container h-100 w-100">
+            <div class="row justify-content-center align-items-center vertical-align-center">
+
+                <div class="col-xl-6 col-md-12">
+                    <div id="tabs">
+                        <ul>
+                            <li><a href="#tabs-1">About</a></li>
+                            <li><a href="#tabs-2">Vision</a></li>
+                            <li><a href="#tabs-3">Mission</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                            <p>About Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cupiditae.</p>
+                        </div>
+                        <div id="tabs-2">
+                            <p>Vision Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ipsam!</p>
+                        </div>
+                        <div id="tabs-3">
+                            <p>Mission Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, dolorem?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12">
+
+                    <img class="responsive-img pt-2" src="./images/about.jpg" alt="about">
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--section 2 start-->
+        <section id="division-2-list">
+            <div class="container">
+                <div class="row mt-5 pt-5 pb-5">
+
+
+                    <div class="col-xl-3 cl-lg-6 col-md-12" id="kapsamaalani" onmouseover="goster()"
+                        onmouseout="gizle()">
+                        <div class="area">
+                            <img class="responsive-img" width="1400" height="600" src="./images/car1.jpg" alt="">
+                            <div class="area-div">
+                                <h3 class="mt-4">Category 1</h3>
+                                <div class="explanation mt-2" id="metinalani" style="display:none;">
+                                    <div id="metin">explanation 1
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-xl-3 cl-lg-6 col-md-12" id="kapsamaalani2" onmouseover="goster2()"
+                        onmouseout="gizle2()">
+                        <div class="area">
+                            <img class="responsive-img" width="1400" height="600" src="./images/car2.jpg" />
+                            <div class="area-div">
+                                <h3 class="mt-4">Category 2</h3>
+                                <div class="explanation mt-2" id="metinalani2" style="display:none;">
+                                    <div id="metin"> explanation 2
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 cl-lg-6 col-md-12" id="kapsamaalani3" onmouseover="goster3()"
+                        onmouseout="gizle3()">
+                        <div class="area">
+                            <img class="responsive-img" width="1400" height="600" src="./images/car3.jpg" />
+                            <div class="area-div">
+                                <h3 class="mt-4">Category 3</h3>
+                                <div class="explanation mt-2" id="metinalani3" style="display:none;">
+                                    <div id="metin"> explanation 3
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 cl-lg-6 col-md-12" id="kapsamaalani4" onmouseover="goster4()"
+                        onmouseout="gizle4()">
+                        <div class="area">
+                            <img class="responsive-img" width="1400" height="600" src="./images/car4.jpg" alt="">
+                            <div class="area-div">
+                                <h3 class="mt-4">Category 4</h3>
+                                <div class="explanation mt-2" id="metinalani4" style="display:none;">
+                                    <div id="metin"> explanation 4
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- Optional JavaScript; choose one of the two! -->
+            </div>
+        </section>
+        <!--section 2 end-->
+
+        <!--section 3 start-->
+        <section id="division-3-career">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-xl-4 col-md-12">
+                        <div id="left-main" classs="col-xl-6 col-md-12 text-left">
+
+                            <img class="responsive-img2" src="./images/box1.jpg" alt="box1">
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-12">
+                        <div id="right-main" classs="col-xl-6 col-md-12 text-left">
+                            <img class="responsive-img2" src="./images/box2.jpg" alt="box1">
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-12">
+                        <div id="right-main" classs="col-xl-6 col-md-12 text-left">
+                            <img class="responsive-img2" src="./images/box3.jpg" alt="box1">
+                        </div>
+                    </div>
+                </div>  </div>
+        </section>
+        <!--section 3 end-->
+
+
+        <h2 id="sss"></h2>
+        <div class="container bg-light mt-5 mb-5 pt-3 pb-3">
+            <div class="row">
+                <div class="col-xl-6 col-md-12">
+                    <div class="container">
+  
+                        <div class="accordion-contianer">
+                          <button class="accordion">Section 1</button>
+                          <div class="panel">
+                            <p>Lorem ipsum...</p>
+                          </div>
+                        </div>
+                      
+                        <div class="accordion-contianer">
+                          <button class="accordion">Section 2</button>
+                          <div class="panel">
+                            <p>Lorem ipsum...</p>
+                          </div>
+                        </div>
+                      
+                        <div class="accordion-contianer">
+                          <button class="accordion">Section 3</button>
+                          <div class="panel">
+                            <p>Lorem ipsum...</p>
+                          </div>
+                        </div>
+                      
+                      </div>
+                </div>
+                <div class="col-xl-6 col-md-12">
+                  <img class="responsive-img" src="./images/box3.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div id="resizable" class="ui-widget-content">
+            <h4 class="ui-widget mt-4 mb-4">Contact</h4>
+            <!--section form start-->
+            <section id="form-email">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xl-6 col-md-12">
+
+
+                            <div class="map-area">
+
+                                <div class="container-fluid m-0 p-0">
+                                    <iframe allowfullscreen="" height="450" loading="lazy"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d400133.6681018031!2d26.79953131931867!3d38.41734151266272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd862a762cacd%3A0x628cbba1a59ce8fe!2zxLB6bWly!5e0!3m2!1str!2str!4v1662739679120!5m2!1str!2str"
+                                        style="width: 100%; max-width: 1400px;border:0;" width="600"></iframe>
+                                    <p>
+                                        &nbsp;</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xl-6 col-md-12">
+                            <form action="" method="post">
+
+                                <div class="form-group-all">
+
+
+                                    <div class="form-group">
+
+                                        <input type="email" class="form-control" id="fullName" placeholder="Name">
+
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
+
+                                    </div>
+
+
+                                    <div class="form-group">
+
+
+                                        <textarea class="form-control" name="" id="message" cols="30" rows="5"
+                                            placeholder="Message "></textarea>
+
+                                    </div>
+
+
+                                    <button type="submit" class="btn  btn-contact mb-4">Submit</button>
+
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+        </div>
+        </section>
+        <!--section form end-->
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+    <div id="bottom">
+        <a href="#top"> <i class="fas fa-arrow-up ">Top</i></a>
+
+    </div>
+    <!--footer  start-->
+    <footer>
+        <div id="division-footer">
+            <a href="">ONE PAGE</a>
+            <p>
+                All rights reserved. &copy;</p>
+            <address>
+
+                <p>Izmir / Türkiye</p>
+                <a href="tel:">+90 111 111 11 11</a>
+                <a href="mailto:">serap68040@gmail.com</a>
+            </address>
+        </div>
+    </footer>
+    <!--footer  end-->
+
+
+    <!--dialog  start-->
+    <div id="dialog">
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submit_id">Login</button>
+        </form>
+    </div>
+    <!--dialog  end-->
+
+
+
+
+</body>
+
+</html>
