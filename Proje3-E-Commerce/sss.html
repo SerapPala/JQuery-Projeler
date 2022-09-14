@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Beyaz esya, ayakkabi, televizyonlar, ses sistemleri, ev esyalari, kisisel bakim, mutfak gerecleri">
+    <meta name="author" content="Serap Pala">
+    <!--Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/e-fav.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+     <!-- jquery ui css-->
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" type="text/css" href="/css/themify-icons.css">
+    <title>E-Commerce</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+      
+  
+      
+       <!-- jquery ui js-->
+      
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            line-height: 18px;
+            background: #f4f4f4;
+        }
+
+        .list-wrapper {
+            padding: 15px;
+            overflow: hidden;
+        }
+
+        .list-item {
+            border: 1px solid #EEE;
+            background: #FFF;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px 0px #EEE;
+        }
+
+        .list-item h4 {
+            color: #FF7182;
+            font-size: 18px;
+            margin: 0 0 5px;
+        }
+
+        .list-item p {
+            margin: 0;
+        }
+
+        .simple-pagination ul {
+            margin: 0 0 20px;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        .simple-pagination li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .simple-pagination li a,
+        .simple-pagination li span {
+            color: #666;
+            padding: 5px 10px;
+            text-decoration: none;
+            border: 1px solid #EEE;
+            background-color: #FFF;
+            box-shadow: 0px 0px 10px 0px #EEE;
+        }
+
+        .simple-pagination .current {
+            color: #FFF;
+            background-color: #FF7182;
+            border-color: #FF7182;
+        }
+
+        .simple-pagination .prev.current,
+        .simple-pagination .next.current {
+            background: #e04e60;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- Topbar Start-->
+    <div class="topbar ">
+        <div class="container-fluid">
+            <div class="d-flex ">
+                <div class="mr-auto p-2">
+                    <div class="p-2">
+                        <ul class="social-media" id="social-media">
+                            <li class="pr-2">
+                                <a class="facebook" href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li class="pr-2">
+                                <a class="twitter" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+
+                            <li class="pr-2">
+                                <a class="youtube" href="#">
+                                    <i class="fab fa-youtube"></i>
+
+                                </a>
+                            </li>
+
+
+
+                            <li class="">
+                                <a class="instagram" href="#">
+                                    <i class="fab fa-instagram"></i>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-2"><a class="text-decoration-none d-xl-none d-lg-none" href="#">Üyelik
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+                <div class="p-2"><a class="text-decoration-none " href="#">Yardım</a>
+                </div>
+                <div class=" blog p-2"><a class="text-decoration-none text-white" style="  padding-right: 1rem;
+                    padding-left: 1rem;" href="#">Blog</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End-->
+
+
+    <!-- Header Start-->
+    <header class="header-area ">
+        <div class="header-main-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="header-main">
+                            <!-- logo start -->
+                            <div class="header-element logo">
+                                <a href="index.html">
+                                    <img src="./images/menu-logo.png" alt="logo-image" class="img-fluid">
+                                </a>
+                            </div>
+                            <!-- logo end -->
+                            <!-- search start -->
+                            <div class="header-element header-search">
+                                <form>
+                                    <input type="text" name="" id="listele" placeholder="Ne Aramıştınız...">
+                                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                            <!-- search end -->
+                            <!-- header icon start -->
+                            <div class="header-element right-block-box">
+                                <ul class="shop-element">
+                                    <li class="side-wrap nav-toggler">
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                            data-target="#navbarContent">
+                                            <span class="line"></span>
+                                        </button>
+                                    </li>
+                                    <li class="side-wrap search-wrap">
+                                        <!-- mobile search start -->
+                                        <div class="search-rap">
+                                            <a href="#search-modal" class="search-popuup" data-bs-toggle="modal"><i
+                                                    class="ion-ios-search-strong"></i></a>
+                                        </div>
+                                        <!-- mobile search end -->
+                                    </li>
+
+                                    <li class="side-wrap cart-wrap d-none d-xl-block d-lg-none">
+                                        <div class="shopping-widget">
+                                            <div class="shopping-cart">
+                                                <div class="dropdown cart-count">
+
+                                                    <button class="btn dropdown-toggle menulogin" type="button"
+                                                        id="dropdown-1" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <span class="cart-icon"><i class="fa fa-user"></i></span>
+                                                        <span><strong>Giriş Yap</strong><br>veya üye
+                                                            ol</span>
+                                                    </button>
+
+
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                                        <a class="dropdown-item" href="#" id="btn_giris">Giriş Yap</a>
+                                                        <a class="dropdown-item" href="#" id="kayit_ol">Üye Ol</a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="side-wrap cart-wrap">
+                                        <div class="shopping-widget">
+                                            <div class="shopping-cart">
+                                                <div class="dropdown cart-count">
+                                                    <button class="btn dropdown-toggle menulogin" type="button"
+                                                        id="dropdown-2" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <span class="cart-icon-wrap">
+                                                            <span class="cart-icon"><i class="fas fa-info"></i></span>
+                                                            <span class="cart-price2"><strong>Hesabım</span>
+                                                            <span><br>Bilgilerim</span>
+                                                        </span>
+                                                    </button>
+
+
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+
+                                                        <a class="dropdown-item" href="#" id="">
+
+                                                            <i class="fas fa-user-cog mr-2"></i>
+
+                                                            Profilim</a>
+                                                        <a class="dropdown-item " href="#" id="message"> <i
+                                                                class="fas fa-envelope mr-2"></i>Mesaj</a>
+
+                                                        <a class="dropdown-item " href="#" class=""
+                                                            id="sifremi_unuttum">
+                                                            <i class="fas fa-key"></i>
+                                                            Şifremi unuttum
+                                                            </i>
+
+                                                        </a>
+
+                                                        <a class="dropdown-item" href="#" id="message"> <i
+                                                                class="fas fa-door-open mr-2"></i>Çıkış</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                    </li>
+                                    <li class="side-wrap cart-wrap">
+                                        <div class="shopping-widget">
+                                        </div>
+
+                                        <div class="shopping-widget">
+                                            <div class="shopping-cart">
+
+                                                <div class="dropdown cart-count">
+
+                                                    <button class="btn dropdown-toggle menulogin" type="button"
+                                                        id="dropdown-2" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <span class="cart-icon-wrap">
+                                                            <span class="cart-icon"><i
+                                                                    class="fas fa-shopping-cart"></i></span>
+                                                            <span class="cart-price2"><strong>Sepet<br>00,00
+                                                                    TL</strong></span>
+                                                        </span>
+                                                    </button>
+
+
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+
+
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-md-4">resim</div>
+                                                                <div class="col-md-8">yazı</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <a class="dropdown-item" href="ordered.html"> <i
+                                                                class="fas fa-shopping-basket mr-2"></i>Sepetim</a>
+
+
+                                                        <a class="dropdown-item" href="ordered.html"> <i
+                                                                class="fas fa-barcode mr-2"></i>Siparişlerim</a>
+
+
+                                                        <a class="dropdown-item" href="address.html"> <i
+                                                                class="fas fa-map mr-2"></i>Adreslerim</a>
+
+
+
+                                                        <!--   <a href="#" id="shoppingBtn" class="btn btn-primary mt-3 ml-2">
+                                                            Tüm Ürünler</a>
+ -->
+                                                        <button href="#" id="shoppingBtn"
+                                                            class="btn btn-primary mt-3 ml-2" data-toggle="modal"
+                                                            data-target="#shoppingBtn">
+                                                            Tüm Ürünler</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- header icon start -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </header>
+    <!-- header end -->
+
+    <!-- menu start  -->
+    <div class="container-fluid ">
+        <section class="menu-area">
+            <div class="row">
+                <div class="col">
+                    <div class="top-menu">
+                        <!-- megamenu start -->
+                        <div class="header-element megamenu-content">
+                            <div class="mainwrap">
+                                <ul class="main-menu pt-2">
+                                    <li class="menu-link parent pl-4">
+                                        <a href="javascript:void(0)" class="link-title">
+                                            <span class="sp-link-title">Beyaz Eşya</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu-link parent">
+                                        <a href="javascript:void(0)" class="link-title">
+                                            <span class="sp-link-title">Ayakkabı</span>
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <a href="#collapse-top-page-menu" data-bs-toggle="collapse"
+                                            class="link-title link-title-lg">
+                                            <span class="sp-link-title">Ayakkabı</span>
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <ul class="dropdown-submenu sub-menu collapse" id="collapse-top-page-menu">
+                                            <li class="submenu-li">
+                                                <a href="#" class="submenu-link">Ayakkabı Kategori 1</a>
+                                            </li>
+
+                                            <li class="submenu-li">
+                                                <a href="#" class="submenu-link">Ayakkabı Kategori 2</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="menu-link parent">
+                                        <a href="javascript:void(0)" class="link-title">
+                                            <span class="sp-link-title">Televizyonlar & Ses Sistemleri</span>
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <a href="#" data-bs-toggle="collapse" class="link-title link-title-lg">
+                                            <span class="sp-link-title">Televizyonlar & Ses Sistemleri</span>
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <ul class="dropdown-submenu sub-menu collapse" id="blog-style">
+                                            <li class="submenu-li">
+                                                <a href="javascript:void(0)" class="g-l-link"><span>Televizyonlar &
+                                                        Ses Sistemleri Kat 1</span> <i
+                                                        class="fa fa-angle-right"></i></a>
+                                                <a href="#" data-bs-toggle="collapse"
+                                                    class="sub-link"><span>Televizyonlar & Ses Sistemleri Kat.
+                                                        1</span> <i class="fa fa-angle-down"></i></a>
+                                                <ul class="collapse blog-style-1" id="#">
+                                                    <li>
+                                                        <a href="javascript:void(0)" class="sub-style"><span>Ürün
+                                                                1</span><i class="fa fa-angle-right"></i></a>
+                                                        <a href="#grid1" data-bs-toggle="collapse"
+                                                            class="blog-sub-style"><span>Ürün 1 Özellik 1</span><i
+                                                                class="fa fa-angle-right"></i></a>
+                                                        <ul class="grid-style collapse" id="grid1">
+                                                            <li><a href="#">Ürün 1 Özellik 1</a></li>
+
+                                                        </ul>
+                                                    </li>
+
+
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="menu-link parent">
+                                        <a href="javascript:void(0)" class="link-title">
+                                            <span class="sp-link-title">Ev Eşyaları</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-link parent">
+                                        <a href="javascript:void(0)" class="link-title">
+                                            <span class="sp-link-title">Kişisel Bakım</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-link parent">
+                                        <a href="javascript:void(0)" class="link-title">
+                                            <span class="sp-link-title">Mutfak Gereçleri</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- megamenu end -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- menu end -->
+
+
+    <!-- menu mobile start -->
+    <div class="headermobile d-xl-none d-lg-none">
+        <nav>
+            <ul id="menu" class="d-xl-none d-lg-none">
+                <li class="ui-state-disabled">
+                    <div>Toys (n/a)</div>
+                </li>
+                <li>
+                    <div>Books</div>
+                </li>
+                <li>
+                    <div>Clothing</div>
+                </li>
+                <li>
+                    <div>Electronics</div>
+                    <ul>
+                        <li class="ui-state-disabled">
+                            <div>Home Entertainment</div>
+                        </li>
+                        <li>
+                            <div>Car Hifi</div>
+                        </li>
+                        <li>
+                            <div>Utilities</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>Movies</div>
+                </li>
+                <li>
+                    <div>Music</div>
+                    <ul>
+                        <li>
+                            <div>Rock</div>
+                            <ul>
+                                <li>
+                                    <div>Alternative</div>
+                                </li>
+                                <li>
+                                    <div>Classic</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div>Jazz</div>
+                            <ul>
+                                <li>
+                                    <div>Freejazz</div>
+                                </li>
+                                <li>
+                                    <div>Big Band</div>
+                                </li>
+                                <li>
+                                    <div>Modern</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div>Pop</div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="ui-state-disabled">
+                    <div>Specials (n/a)</div>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fa fa-bars"></i></div>
+    </div>
+    <!-- menu mobile end -->
+
+    <!--Main Start-->
+    <main>
+
+
+
+       
+
+
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="row text-center ">
+                        <div class="col-md-12 text-center">
+                            <div class="col-md-12 text-center mt-5 mb-5"><h3 class="display-3">Sık Sorulan Sorular</h3></div>
+                    </div>   </div>
+                    <div id="accordion">
+                        <h3>Section 1</h3>
+                        <div>
+                          <p>
+                          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                          </p>
+                        </div>
+                        <h3>Section 2</h3>
+                        <div>
+                          <p>
+                          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                          velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                          suscipit faucibus urna.
+                          </p>
+                        </div>
+                        <h3>Section 3</h3>
+                        <div>
+                          <p>
+                          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                          ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                          lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                          </p>
+                          <ul>
+                            <li>List item one</li>
+                            <li>List item two</li>
+                            <li>List item three</li>
+                          </ul>
+                        </div>
+                        <h3>Section 4</h3>
+                        <div>
+                          <p>
+                          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                          mauris vel est.
+                          </p>
+                          <p>
+                          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                          inceptos himenaeos.
+                          </p>
+                        </div>
+                      </div>
+            
+                </div>
+            </div>
+        </div>
+      
+
+
+
+
+        <div class="list-wrapper">
+            <div class="list-item">
+                <h4>Iron Man</h4>
+
+            </div>
+            <div class="list-item">
+                <h4>The Incredible Hulk</h4>
+            </div>
+            <div class="list-item">
+                <h4>Iron Man 2</h4>
+            </div>
+
+            <div class="list-item">
+                <h4>Thor</h4>
+
+            </div>
+            <div class="list-item">
+                <h4>Captain America: The First Avenger</h4>
+
+            </div>
+            <div class="list-item">
+                <h4>The Avengers</h4>
+
+            </div>
+            <div class="list-item">
+                <h4>Iron Man 3</h4>
+
+            </div>
+            <div class="list-item">
+                <h4>Thor: The Dark World</h4>
+
+            </div>
+            <div class="list-item">
+                <h4>Captain America: The Winter Soldier</h4>
+
+            </div>
+            <div class="list-item">
+                <h4>Guardians of the Galaxy</h4>
+
+            </div>
+            <div class="list-item">
+                <h4>Avengers: Age of Ultron</h4>
+
+            </div>
+            <div class="list-item">
+                <h4>Ant-Man</h4>
+
+            </div>
+            <div class="list-item">
+                <h4>Captain America: Civil War</h4>
+
+            </div>
+            <div class="list-item">
+                <h4>Doctor Strange</h4>
+            </div>
+            <div class="list-item">
+                <h4>Spider-Man: Homecoming</h4>
+            </div>
+            <div class="list-item">
+                <h4>Guardians of the Galaxy Vol. 2</h4>
+            </div>
+            <div class="list-item">
+                <h4>Thor: Ragnarok</h4>
+            </div>
+            <div class="list-item">
+                <h4>Black Panther</h4>
+            </div>
+            <div class="list-item">
+                <h4>Avengers: Infinity War</h4>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="pagination-container"></div>
+   
+
+
+        <div class="pagination-box mt-3 mb-3">
+            <ul class="pagination">
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+            </ul>
+        </div>
+        <!-- Pagination End-->
+
+
+        <!-- Back To Top Start-->
+        <button href="#" class="btn-primary backtotop p-2" id="backTopButton">Yukarı</button>
+        <!-- Back To Top End-->
+
+
+
+        <!-- advertisement Start-->
+        <div class="reklam" id="reklamKapsama">
+            <div class="d-flex">
+                <div class="mr-auto">
+                    <p>
+                        <a href="#"></a>
+                    </p>
+                </div>
+                <div class="mr-auto">
+                    <p>
+                        <a href="#"> <img src="./images/reklam.jpg" alt="reklam-img" id="reklamimg"></a>
+                    </p>
+                </div>
+                <div class="mb-3"><button class="btn bg-dark text-white pt-1 mt-2" id="reklamClose">&times; &nbsp;Reklam
+                        İstemiyorum</button>
+                    <button class="btn bg-dark text-white pt-1 mt-2" id="reklamackapat">Reklam Gizle/Göster</button>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- advertisement end-->
+
+    </main>
+    <!--Main End-->
+
+    <!-- Footer Start-->
+    <footer class="footer">
+        <div class="footer__area p-5">
+            <div class="container-fluid" style="max-width:1900px!important">
+                <div class="" id="footer-grid">
+                    <div class="footer__widget  ">
+                        <div class="footer__widget__title pb-1">
+                            <h3>Hakkımızda</h3>
+                        </div>
+                        <div class="footer__widget__content">
+                            <div class="footer__widget__content__footer-link">
+                                <ul>
+                                    <li>
+                                        <a href="hakkimizda.html">Hakkımızda</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kampanyalar</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Banka Hesap Numaraları</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Haberler</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="footer__widget  ">
+                        <div class="footer__widget__title pb-1">
+                            <h3>Müşteri Hizmetleri</h3>
+                        </div>
+                        <div class="footer__widget__content">
+                            <div class="footer__widget__content__footer-link">
+                                <ul>
+                                    <li>
+                                        <a href="#">Sipariş Sorgulama</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Teslimat ve Kargo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">İade ve Değişim</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Üyelik Sözleşmesi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Gizlilik ve Güvenlik</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="footer__widget  ">
+                        <div class="footer__widget__title pb-1">
+                            <h3>Yardım</h3>
+                        </div>
+                        <div class="footer__widget__content">
+                            <div class="footer__widget__content__footer-link">
+                                <ul>
+                                    <li>
+                                        <a href="iletisim.html">İletişim Bilgileri</a>
+                                    </li>
+                                    <li>
+                                        <a href="sss.html">Sık Sorulan Sorular</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="footer__widget  ">
+                        <div class="footer__widget__title pb-1">
+                            <h3>İletişim</h3>
+                        </div>
+                        <div class="footer__widget__content">
+                            <div class="footer__widget__content__footer-link">
+                                <ul>
+                                    <li>
+                                        <a href="https://goo.gl/maps/FDUUzqT4yKF4xZ6t7"
+                                            class="text-dark"><strong>Adres&nbsp;: </strong> İzmir / Türkiye</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:ornek@gmail.com" class="text-dark"><strong>E-Posta&nbsp;:
+                                            </strong> ornek@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+90123456789" class="text-dark"><strong>Telefon&nbsp;: </strong>
+                                            0123456789</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="footer__widget pl-30 ">
+                        <div class="footer__widget__title pb-1">
+                            <h3>Bizi Takip Edin</h3>
+                        </div>
+                        <div class="footer__widget__content">
+                            <div class="footer__widget__content__footer-link ">
+
+                                <ul class="social-media">
+                                    <li class="pr-2">
+                                        <a class="facebook" href="#">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="pr-2">
+                                        <a class="twitter" href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="pr-2">
+                                        <a class="youtube" href="#">
+                                            <i class="fab fa-youtube"></i>
+
+                                        </a>
+                                    </li>
+
+
+
+                                    <li class="">
+                                        <a class="instagram" href="#">
+                                            <i class="fab fa-instagram"></i>
+
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="subscribe">
+                                    E-Bültene abone olun, gelişmeleri kaçırmayın
+                                </p>
+                                <div class="subscribe-box d-flex">
+
+                                    <input placeholder="E-Posta Adresiniz" class="subscribe-box__input"
+                                        style="margin-left:-20px!important;" type="text">
+                                    <i class="fa fa-arrow-right fa-2x subscribe-box__i" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End-->
+
+    <!-- Copyright Start-->
+    <div class="copyright">
+        <div class="container-fluid">
+            <!-- Copyright Start-->
+            <hr>
+            <div class="d-flex">
+                <div class="p-2 pt-3">Copyright &copy;&nbsp;2022&nbsp;E-Ticaret&nbsp;-&nbsp;Kırmızı</div>
+                <div class="ml-auto p-2"><img src="./images/copyright-logo.png" alt="copyright-logo"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End-->
+
+
+    <!-- Login Modal Start-->
+    <div class="modal fade" id="myUye" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title"></h5>
+                    <div class="modal-body">
+
+                        <div class="container">
+                            <h3>Üye Girişi</h3>
+                            <form action="POST">
+                                <div class="form-group">
+                                    <input type="text" id="user_email" name="email" class="form-control"
+                                        placeholder="E-Posta Adresinizi giriniz">
+                                    <small id="validation_email" class="form-text text-danger" required></small>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="user_phone" name="phone" class="form-control"
+                                        placeholder="Telefon Numaranızı giriniz">
+                                    <small id="validation_phone" class="form-text text-danger" required></small>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="user_password" name="password" class="form-control"
+                                        placeholder="Şifrenizi giriniz">
+                                    <small id="validation_password" class="form-text text-danger" required></small>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="re_user_password" name="re_password" class="form-control"
+                                        placeholder="Şifrenizi tekrar giriniz">
+                                    <small id="validation_password" class="form-text text-danger" required></small>
+                                </div>
+                                <button class="btn btn-danger mr-1" type="reset">Reset</button>
+                                <button class="btn btn-success" id="btnSubmit" type="submit">Login</button>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-danger" data-dismiss="modal">Kapat</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal End-->
+
+    <!-- Register Modal Start-->
+    <!--   kayit_ol -->
+    <div class="modal fade" id="myUyeOl" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title"></h5>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h3>Kayıt Ol</h3>
+                            <form action="POST">
+                                <div class="form-group">
+                                    <label for="email">E-Posta Adresiniz</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="E-Posta Adresinizi Giriniz">
+                                    <small class="text-danger">E-Posta Adresi Girmediniz</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Telefon Numaranız</label>
+                                    <input type="text" class="form-control" id="phone" name="phone"
+                                        placeholder="Telefon Numaranızı Giriniz" required>
+                                    <small class="text-danger">Telefon Numaranızı Girmediniz</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Şifreniz</label>
+                                    <input type="text" class="form-control" id="password" name="password"
+                                        placeholder="Şifrenizi Giriniz" required>
+                                    <small class="text-danger">Şifrenizi Girmediniz</small>
+                                </div>
+
+                                <div class="checkbox mt-2 mb-3">
+                                    <label for=""></label>
+                                    <input type="checkbox"><span class="mr-2">Beni Hatırla</span></input>
+                                </div>
+                                <button type="reset" class="btn btn-danger"><i class="fas fa-tools"></i>
+                                    Temizle</button>
+                                <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Kayıt
+                                    Ol</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-danger" data-dismiss="modal">Kapat</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Modal End-->
+
+
+    <!-- forgot my password Modal Start-->
+    <div class="modal fade" id="mySifreHatirlat" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title"></h5>
+                    <div class="modal-body">
+
+                        <div class="container">
+                            <h3>Şifremi Unuttum</h3>
+                            <form action="POST">
+                                <div class="form-group">
+                                    <label for="email">E-Posta Adresiniz</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="E-Posta Adresinizi Giriniz">
+                                    <small class="text-danger">E-Posta Adresi Girmediniz</small>
+                                </div>
+
+                                <button type="reset" class="btn btn-danger">Temizle</button>
+                                <button type="submit" class="btn btn-primary">Gönder</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-danger" data-dismiss="modal">Kapat</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- forgot my password Modal End-->
+
+
+
+
+
+    <style>
+        .book {
+            width: 200px;
+            height: 230px;
+            display: inline-block;
+            margin: 10px;
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .book:hover {
+            opacity: 1;
+        }
+
+        .book-image {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .book-author {
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: "Arial";
+            color: #555;
+            padding-top: 5px;
+        }
+    </style>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{"posts": [
+    {    
+    "id":1,
+    "name":"Serap",
+    "surname":"Pala"
+},
+{    
+    "id":2,
+    "name":"Sinem",
+    "surname":"Pala"
+},
+{    
+    "id":3,
+    "name":"Selin",
+    "surname":"Pala"
+},
+{    
+    "id":4,
+    "name":"Şüheda",
+    "surname":"Pala"
+}
+
+]
+}
